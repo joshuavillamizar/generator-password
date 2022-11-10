@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <main class="create-password">
+        <div class="create-password__content">
+          <div class="create-password__content__wrapper">
+            <input class="create-password__content__input" type="text" readonly>
+            <button class="create-password__content__copy-button">
+
+            </button>
+          </div>
+          <form class="create-password__content__form" action="">
+
+            <ul class="create-password__content__fwrapper">
+                <li class="create-password__content__fwitem">
+                  <div class="create-password__content__fwchecked">
+                    <input class="create-password__content__fwiinput" type="checkbox" name="" id="up">
+                      <label class="create-password__content__fwilabel" for="up">
+                        Uppercase
+                    </label>
+
+                  </div>
+                </li>
+                <li class="create-password__content__fwitem">
+                  <div class="create-password__content__fwchecked">
+                    <input class="create-password__content__fwiinput" type="checkbox" name="" id="low">
+                      <label class="create-password__content__fwilabel" for="low">
+                          Lowercase
+                      </label>
+
+                  </div>
+                </li>
+                <li class="create-password__content__fwitem">
+                  <div class="create-password__content__fwchecked">
+                    <input class="create-password__content__fwiinput" type="checkbox" name="" id="num">
+                      <label class="create-password__content__fwilabel" for="num">
+                        Numbers
+                      </label>
+
+                  </div>
+                </li>
+                <li class="create-password__content__fwitem">
+                  <div class="create-password__content__fwchecked">
+                    <input class="create-password__content__fwiinput" type="checkbox" name="" id="sym">
+                      <label class="create-password__content__fwilabel" for="sym">
+                        Symbols
+                      </label>
+
+                  </div>
+                </li>
+                <li class="create-password__content__fwitem">
+                  <div class="create-password__content__fwchecked">
+                    <div>
+                    <label class="create-password__content__fphase">Password Length</label>
+                    </div>
+                    <input class="create-password__content__input-range" type="range">
+
+                    <input class="create-password__content__number" type="number">
+                  </div>
+                </li>
+              </ul>
+              <button class="create-password__content__button" type="submit">Generate Password</button>
+          </form>
+
+        </div>
+    </main>
+
+</body>
+</html>

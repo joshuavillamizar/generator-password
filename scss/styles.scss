@@ -1,0 +1,134 @@
+@import "vendors/reset";
+*{
+
+  font-family: "Open Sans";
+}
+body {
+  background-color: #7ADAF3;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.create-password {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    width: 644px;
+    background-color: #E5F8F4;
+    padding: 32px 63px 32px;
+
+    &__wrapper {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 76px;
+      border: 2px solid #CFD8D7;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      padding: 24px 36px;
+      margin-bottom: 36px;
+    }
+
+    &__fwrapper {
+      padding-left: 91px;
+    }
+
+    &__fwitem {
+      margin-bottom: 24px;
+    }
+
+    &__fwchecked {
+      position: relative;
+    }
+
+
+    &__fwilabel{
+      padding-left: 58px;
+      font-size: 20px;
+      user-select: none;
+      display: inline;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        content: "";
+        width: 24px;
+        height: 24px;
+        border: 1px solid #ACBAB8;
+        border-radius: 3px;
+      }
+
+      &:after{
+        content: "";
+        width: 18px;
+        height: 18px;
+        background-color:black;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        display: none;
+      }
+    }
+
+    &__copy-button{
+      background-image: url("../img/copypage.png");
+      background-color: transparent;
+      background-size: 26px;
+      width: 26px;
+      height: 26px;
+    }
+
+    &__fwiinput{
+      position: absolute;
+      top:-99999px;
+      left: 0;
+    }
+
+    &__fwiinput:checked + label:after{
+      display: block;
+    }
+
+    &__fphase{
+      font-size: 25px;
+    }
+
+    &__input-range{
+      width: 65%;
+    }
+
+    &__number{
+      padding: 21px 15px;
+      width: 64px;
+      height: 46px;
+      font-size: 30px;
+    }
+
+    &__button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 387px;
+      height: 74px;
+      background-color: #15A085;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  }
+}
+
+
